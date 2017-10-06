@@ -1,2 +1,4 @@
+# ignore all compile py stuffs
 *.pyc
+
 */*/*.pyc
