@@ -1,0 +1,6 @@
+---
+# tasks file for cowsay
+- name: install cowsay
+  apt:
+    name: cowsay
+    update_cache: True
