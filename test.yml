@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  connection: local
+  vars_files:
+    - vars/test.vars
+  tasks:
+    - debug: var=myvars
+
+    - shell: |
+        ansible-playbook /tmp/ansible/test1.yml \
+        --extra-vars="{vaar: {{myvars}}}"\
+        &> /tmp/run.log
+# this is setup.yml equivalent

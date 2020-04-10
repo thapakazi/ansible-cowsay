@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  connection: local
+  vars_files:
+    - vars/test.vars
+  tasks:
+    - debug: var=vaar[0].greeting
+    - debug: var=vaar[0].eat
